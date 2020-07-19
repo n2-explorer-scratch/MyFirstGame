@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Ubuntu:wght@500&display=swap');
+
+
 body {
 	background-color: rgb(60, 0, 255);
 	
 }
 
+p {
+	font-family: Raleway, sans-serif;
+}
+
 h6 {
 	color: rgb(60, 87, 7);
 	font-size: 11px;
-	
+	font-family: Ubuntu, sans-serif;
+}
+
+h1 {
+	font-family: Ubuntu, sans-serif;
+
 }
