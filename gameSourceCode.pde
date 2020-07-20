@@ -17,29 +17,40 @@ void setup() {
 			rect(this.x, this.y, this.size, this.size);
 		};
 		
-		var playButton = function(x, y) {
-			fill();
-			rectMode(CENTER);
-			rect(x, y, 30, 20);
-			
-		};
 		
 		var x;
 		var y;
-		var size = 10;
+		var px;
+		var py;
+		var size = 10; // Change to desired size
 		var scenes = [0, 1, 2];
 		var currentScene = 0;
-		var player = new Block(x, y, size);
+		
+		var playButton = function(x, y) {
+			fill(255, 255, 255);
+			rectMode(CENTER);
+			rect(x, y, 30, 20);
+			if (mouseX > (x - 15) && mouseX < (x + 15) && mouseY > (y - 10) && mouseY < (y + 10)) {
+				currentScene = 1;
+			}
+		};
+		
+		
 		
 		draw = function() {
 			background(0, 0, 0);
 			
 			/* main code */
 			if (currentScene === scenes[0]) {
-				
+				px = (frameCount) % 500;
+				py = 200;
+				playButton(px, py);
 			}
 			
+			if (currentScene === scenes[1]) {
+				var player = new Block(x, y, size);
+			}
 			/* --------- */
-		}
+		};
 	/*------------*/
  }
