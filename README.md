@@ -1,4 +1,4 @@
-# n2-explorer-scratch.github.io
+# MyFirstGame.com
 My first webpage with processing.js.
 
 # Info
